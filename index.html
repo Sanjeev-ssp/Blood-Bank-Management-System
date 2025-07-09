@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Blood Bank - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-section {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f44336, #d32f2f);
+            color: white;
+            text-align: center;
+        }
+
+        .header-section h2 {
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .testimonials {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .testimonial-card {
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Logo">
+                Blood Bank
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-login.html">Admin Panel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donator.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests.html">Search Blood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ✅ Navbar End -->
+
+    <!-- ✅ Header Section -->
+    <div class="header-section">
+        <h2>A SINGLE PINT CAN SAVE THREE LIVES</h2>
+        <p class="lead">A SINGLE GESTURE CAN CREATE A MILLION SMILES</p>
+        <a href="donator.html" class="btn btn-light mt-3">Register As Donor</a>
+    </div>
+
+    <!-- ✅ Articles Section -->
+    <div class="container mt-5">
+        <h3 class="text-center mb-4 text-danger">Articles</h3>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="blood-types.jpg" class="card-img-top" alt="Blood Types">
+                    <div class="card-body">
+                        <h5 class="card-title">Blood Types</h5>
+                        <p class="card-text">Understand different blood types and compatibility in donation.</p>
+                        <a href="blood-types.html" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="benefits.jpg" class="card-img-top" alt="Benefits of Donation">
+                    <div class="card-body">
+                        <h5 class="card-title">Benefits of Donation</h5>
+                        <p class="card-text">Explore how donating blood helps both donors and recipients.</p>
+                        <a href="benefits.html" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="process.jpg" class="card-img-top" alt="Donation Process">
+                    <div class="card-body">
+                        <h5 class="card-title">Donation Process</h5>
+                        <p class="card-text">Learn how the blood donation process works, step-by-step.</p>
+                        <a href="donation-process.html" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ✅ Testimonials Section -->
+    <div class="testimonials container mt-5">
+        <h3 class="text-center text-danger mb-4">What Our Donors Say</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>"Donating blood gave me a sense of purpose. It feels amazing to help others!"</p>
+                    <strong>- Priya Shah</strong>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>"I encourage everyone to donate. It's safe, easy, and you could save a life."</p>
+                    <strong>- Rohan Mehta</strong>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>"The staff were caring and the process was smooth. I’ll definitely donate again."</p>
+                    <strong>- Ayesha Khan</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <p>&copy; 2025 Blood Bank | Made with ❤️ for humanity</p>
+    </footer>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

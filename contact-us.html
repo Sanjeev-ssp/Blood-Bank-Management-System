@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Blood Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h2 class="text-center text-danger">Contact Us</h2>
+
+        <form method="POST" action="backend/contact.php" class="mt-4 bg-white p-4 shadow rounded col-md-8 mx-auto">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea name="message" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger btn-block">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>

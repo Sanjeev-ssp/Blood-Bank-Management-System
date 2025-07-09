@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Blood</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h2 class="text-center text-danger">Search Blood Availability</h2>
+
+        <form class="form-inline justify-content-center mt-4" method="GET" action="backend/search_donor.php">
+            <div class="form-group mx-2">
+                <label for="blood_group" class="mr-2">Blood Group</label>
+                <select name="blood_group" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger mx-2">Search</button>
+        </form>
+
+        <!-- This section will later be filled dynamically from backend -->
+        <div class="mt-5" id="results">
+            <!-- Placeholder for search results -->
+        </div>
+    </div>
+
+</body>
+</html>
